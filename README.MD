@@ -83,5 +83,5 @@
 	- add 后的文件状态
 - **committed -> 已提交**
 	- commit后的文件状态 
-
+<center><img src="./photo.png" width="70%" > </center>
 
