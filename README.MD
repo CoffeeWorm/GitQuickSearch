@@ -68,13 +68,19 @@
 - git show <标签名> 查看相应标签的信息
 - git checkout <标签名> 跳转到相应标签
 
+#### 撤销操作
+- git commit --amend 提交后补漏
+- git reset HEAD <file>... 取消暂存
+- git checkout -- <file>... 撤消对文件的修改 *危险的命令*
+
 #### 远程
 ###### git pull === git fetch && git merge
 - git pull 拉取远程仓库，到committed阶段
 - git fetch 拉取远程仓库，到modified阶段
 - git push <远程仓库> <分支> 推送至远程仓库
-- git remote add origin <仓库地址> 新增远程仓库origin
-- git remote set-url origin <仓库地址> 修改远程仓库origin
+- git remote add <自定义名> <url> 新增远程仓库，名称为 <自定义名> 
+- git remote set-url <自定义名> <仓库地址> 修改远程仓库 <自定义名> 的链接
+- git remote -v 查看读写远程仓库使用的 Git 保存的简写与其对应的 URL
 
 ## 基本状态
 - **modified----> 已修改**
